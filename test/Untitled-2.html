@@ -1,0 +1,54 @@
+<script>
+    setTimeout(function(){
+        var originCountry = "India"
+        var destCountry = "Banglore"
+        var data = { "__adobe": { "target": {} } };
+        data.__adobe.target["originCountry"] = originCountry;
+        data.__adobe.target["destCountry"] = destCountry;
+        try {
+            alloy("sendEvent", {
+                "renderDecisions": false,
+                "decisionScopes": ["ganeshCustomFire"],
+                "data": data
+            }).then(function (result) {
+
+                var propositions = result.propositions;
+
+                var heroProposition;
+                var activityHtml;
+                if (propositions) {
+                    for (var i = 0; i < propositions.length; i++) {
+                        var proposition = propositions[i];
+                        if (proposition.scope === "ganeshCustomFire") {
+                            heroProposition = proposition;
+                            activityHtml = heroProposition.items[0].data.content;
+                             document.querySelectorAll('head')[0].insertAdjacentHTML("beforeEnd", activityHtml);
+                            //var scriptElement = document.createElement('script');
+                 //scriptElement.textContent = activityHtml;
+                  //document.body.appendChild(scriptElement);
+                            //document.body.appendChild(scriptElement);
+                            break;
+                        }
+                    }
+                }
+                alloy("sendEvent", {
+                    xdm: {
+                        eventType: "propositionDisplay", _experience:
+                        {
+                            decisioning: {
+                                propositionEventType: { display: 1 },
+                                propositions: [{
+                                    id:
+                                        heroProposition.id, scope: heroProposition.scope,
+                                    scopeDetails: heroProposition.scopeDetails
+                                }]
+                            }
+                        }
+                    }
+                });
+            });
+        } catch (err) {
+            console.log("Error", err);
+        }
+    },500);
+</script>

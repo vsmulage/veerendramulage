@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function targetPageParams() {
+          return {
+            "at_property": "32974e81-63ab-bf26-7caf-34ac28dccef1"
+          };
+        }
+     
+     
+        
+   //prehiding snippet for Adobe Target with asynchronous tags deployment
+   ;(function(win, doc, style, timeout) {
+   var STYLE_ID = 'at-body-style';
+   function getParent() {
+      return doc.getElementsByTagName('head')[0];
+   }
+   function addStyle(parent, id, def) {
+      if (!parent) {
+      return;
+      }
+      var style = doc.createElement('style');
+      style.id = id;
+      style.innerHTML = def;
+      parent.appendChild(style);
+   }
+   function removeStyle(parent, id) {
+      if (!parent) {
+      return;
+      }
+      var style = doc.getElementById(id);
+      if (!style) {
+      return;
+      }
+      parent.removeChild(style);
+   }
+   addStyle(getParent(), STYLE_ID, style);
+   setTimeout(function() {
+      removeStyle(getParent(), STYLE_ID);
+   }, timeout);
+   }(window, document, "body {opacity: 0 !important}", 3000));
+</script>
+
+    <script src="https://assets.adobedtm.com/6268dc4b6b26/ed104c468c6a/launch-7725a49727e7-development.min.js" async></script>
+    <script>
+   var digitalData=    {
+  
+    "product": {
+      "productName": "Car"
+    }
+  }
+    </script>
+  
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>My Website</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Website</h2>
+            <p>Explore the world of design, development, and creativity!</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <img src="https://via.placeholder.com/300" alt="Feature 1">
+            <h3>Feature One</h3>
+            <p>This is the first amazing feature of this website.</p>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/300" alt="Feature 2">
+            <h3>Feature Two</h3>
+            <p>This is the second amazing feature of this website.</p>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/300" alt="Feature 3">
+            <h3>Feature Three</h3>
+            <p>This is the third amazing feature of this website.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

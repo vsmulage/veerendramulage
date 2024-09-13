@@ -1,0 +1,822 @@
+{
+    "requestId": "72686d74-b825-42be-8ad7-efb66e92f957",
+    "handle": [
+        {
+            "payload": [
+                {
+                    "id": "89381327388093505663696427628340670183",
+                    "namespace": {
+                        "code": "ECID"
+                    }
+                }
+            ],
+            "type": "identity:result"
+        },
+        {
+            "payload": [
+                {
+                    "id": "AT:eyJhY3Rpdml0eUlkIjoiNTQwMzg1IiwiZXhwZXJpZW5jZUlkIjoiMCJ9",
+                    "scope": "__view__",
+                    "scopeDetails": {
+                        "decisionProvider": "TGT",
+                        "activity": {
+                            "id": "540385"
+                        },
+                        "experience": {
+                            "id": "0"
+                        },
+                        "strategies": [
+                            {
+                                "step": "entry",
+                                "trafficType": "0"
+                            },
+                            {
+                                "step": "display",
+                                "trafficType": "0"
+                            }
+                        ],
+                        "characteristics": {
+                            "eventToken": "vQLIo84JJLrpBcuW/1U/rZ3BNhkKdJh9FdggP2851ydw54XAlJ3xNRImNE7jBWgsgJd3DNmZFmAmR22YP7jXhw==",
+                            "analyticsToken": "1516137:0:0|2"
+                        },
+                        "correlationID": "540385:0:0"
+                    },
+                    "items": [
+                        {
+                            "id": "0",
+                            "schema": "https://ns.adobe.com/personalization/dom-action",
+                            "meta": {
+                                "profile.nnvisitCounter": "1",
+                                "profile.countVisit_sachin": "5",
+                                "activity.name": "Form-lightbox",
+                                "profile.profileparamcheck_k": "1",
+                                "profile.uduID": "1",
+                                "profile.count_visit_sa": "1",
+                                "activity.id": "540385",
+                                "geo.state": "karnataka",
+                                "profile.categoryAffinitiesArray": "[]",
+                                "profile.nn_discountCode": "noDiscount",
+                                "profile.visitCount": "5",
+                                "profile.nn_membertype": "",
+                                "profile.countVisit_Shital": "5",
+                                "offer.name": "134",
+                                "profile.custparam_gender": "male",
+                                "profile.Current_Date_GK": "2024-09-12",
+                                "profile.Gauresh_VisitNumber": "1",
+                                "experience.name": "Experience A",
+                                "profile.paramsprofile2": "1",
+                                "profile.base": "0",
+                                "profile.nnPopup": "false",
+                                "profile.totalSale": "0",
+                                "profile.custparam_itemsInCart": "false",
+                                "experience.id": "0",
+                                "profile.pooVisiterCount": "1",
+                                "profile.ganeshNewSession": "false",
+                                "profile.poornima_membertype": "",
+                                "geo.city": "bangalore",
+                                "profile.GaneshMembershipType": "gold",
+                                "profile.nnPopupPageB": "false"
+                            },
+                            "data": {
+                                "type": "setHtml",
+                                "format": "application/vnd.adobe.target.dom-action",
+                                "content": "<div><script>\n  // Lightbox\n  var att_config = {\n    // =========================== USER DEFINED CONFIGURATION ===========================\n    // Use the main title to grab attention. Try to keep it under 40 characters!\n    title1: \"$entity1.name\",\n    title2: \"\",\n    title3: \"\",\n    title4: \"\",\n    // The sub title should entice your customer. Keep it short and sweet under 80 characters.\n    subtitle1: \"$entity1.message\",\n    subtitle2: \"\",\n    subtitle3: \"\",\n    subtitle4: \"\",\n    // Customize the link that closes the lightbox. Keep it under 30 characters.\n    declineText: \"close\",\n    // Host your image and place a link to it here. The image should be clear and concise.\n    // Try to keep the dimensions to 400px wide x 500px high.\n    imageUrl1: \"$entity1.thumbnailUrl\",\n    imageUrl2: \"\",\n    imageUrl3: \"\",\n    imageUrl4: \"\",\n\n    // The button text should provide clear instructions. Keep it under 30 characters for maximum impact.\n    buttonText: \"View\",\n    // Once the customer has clicked, where do you want to redirect them?\n    buttonLink1: \"$entity1.pageUrl\",\n    buttonLink2: \"\",\n    buttonLink3: \"\",\n    buttonLink4: \"\",\n    // Time delay before the lightbox is shown, in seconds. Put a 0 to show the lightbox immediately, false to never show.\n    delay: 1,\n    // Set to true to close lightbox when the area outside the lightbox is clicked.\n    clickBackgroundToClose: true,\n    // =========================== END USER DEFINED CONFIGURATION ===========================\n  };\n  (function () {\n    \"use strict\";\n    var title1 =\n        null != att_config.title1 && att_config.title1 ? att_config.title1 : \"\",\n        title2=\n        null != att_config.title2 && att_config.title2 ? att_config.title2 : \"\",\n        title3 =\n        null != att_config.title3 && att_config.title3 ? att_config.title3 : \"\",\n        title4 =\n        null != att_config.title4 && att_config.title4 ? att_config.title4 : \"\",\n\n      subtitle1 =\n        null != att_config.subtitle1 && att_config.subtitle1\n          ? att_config.subtitle1\n          : \"\",\n          subtitle2 =\n        null != att_config.subtitle2 && att_config.subtitle2\n          ? att_config.subtitle2\n          : \"\",\n          subtitle3 =\n        null != att_config.subtitle3 && att_config.subtitle3\n          ? att_config.subtitle3\n          : \"\",\n          subtitle4 =\n        null != att_config.subtitle4 && att_config.subtitle4\n          ? att_config.subtitle4\n          : \"\",\n        \n      buttonText =\n        null != att_config.buttonText && att_config.buttonText\n          ? att_config.buttonText\n          : \"\",\n      buttonLink1 =\n        null != att_config.buttonLink1 && att_config.buttonLink1\n          ? att_config.buttonLink1\n          : \"\",\n          buttonLink2 =\n        null != att_config.buttonLink2 && att_config.buttonLink2\n          ? att_config.buttonLink2\n          : \"\",\n          buttonLink3 =\n        null != att_config.buttonLink3 && att_config.buttonLink3\n          ? att_config.buttonLink3\n          : \"\",\n          buttonLink4 =\n        null != att_config.buttonLink4 && att_config.buttonLink4\n          ? att_config.buttonLink4\n          : \"\",\n      declineText =\n        null != att_config.declineText && att_config.declineText\n          ? att_config.declineText\n          : \"\",\n      template =\n        `<div id=\"att_lightbox\">  \n          <div class=\"att_lightbox_background\"></div>\n          <div class=\"att_popup\"> \n            <div class=\"att_lightbox_container\">\n                   \n                <div class=\"att_lightbox_column\">\n                  <img src=`+att_config.imageUrl1+`></img>\n                  <h1 class=\"att_lightbox_header\">` + title1 +`</h1>\n                  <p class=\"att_lightbox_subhheader\">` + subtitle1 + `</p>\n                  <a href=\"` + buttonLink1 + `\" class=\"att_lightbox_button\" rel=\"nofollow noopener\">` +buttonText +`</a>\n                </div>   \n                \n                 <div class=\"att_lightbox_column\">\n                   <img src=`+att_config.imageUrl2+`></img>\n                  <h1 class=\"att_lightbox_header\">` + title2 +`</h1>\n                  <p class=\"att_lightbox_subhheader\">` + subtitle2 + `</p>\n                  <a href=\"` + buttonLink2 + `\" class=\"att_lightbox_button\" rel=\"nofollow noopener\">` +buttonText +`</a>\n                </div>  \n\n                 <div class=\"att_lightbox_column\">\n                   <img src=`+att_config.imageUrl3+`></img>\n                  <h1 class=\"att_lightbox_header\">` + title3 +`</h1>\n                  <p class=\"att_lightbox_subhheader\">` + subtitle3 + `</p>\n                  <a href=\"` + buttonLink3 + `\" class=\"att_lightbox_button\" rel=\"nofollow noopener\">` +buttonText +`</a>\n                </div>  \n\n                 <div class=\"att_lightbox_column\">\n                   <img src=`+att_config.imageUrl4+`></img>\n                  <h1 class=\"att_lightbox_header\">` + title4 +`</h1>\n                  <p class=\"att_lightbox_subhheader\">` + subtitle4 + `</p>\n                  <a href=\"` + buttonLink4 + `\" class=\"att_lightbox_button\" rel=\"nofollow noopener\">` +buttonText +`</a>\n                </div>  \n           \n            </div>   \n          </div>\n        </div>`,\n      bgImage =\n        null != att_config.imageUrl && att_config.imageUrl\n          ? \"background-image: url(\" + att_config.imageUrl + \");\"\n          : \"\",\n      style =\n        `\n        .att_lightbox_container{\n  \n          display: grid;\n          grid-template-columns: 1fr 1fr 1fr 1fr;\n\n        }\n        .att_popup img{\n          width: 180px;\n          height: 200px;\n        }\n     \n        // #att_lightbox {  display: none;  justify-content: center;  align-items: center;  position: fixed;  top: 0;  left: 0;  z-index: 1000;  width: 100vw;  height: 100vh;  margin: 0;  padding: 0;}.att_lightbox_background {  display: block;  position: fixed;  width: 100vw;  height: 100vh;  top: 0;  left: 0;  background-color: black;  opacity: 0.75;  z-index: 1000;  margin: 0;  padding: 0;}.att_popup * { font-family: Helvetica, Arial, sans-serif;}.att_popup {   background: white; max-height: 500px;  width: 100%;  height: 100%;  margin: 0;  padding: 0;  display: flex;  justify-content: center;  align-items: center;  flex-direction: row;  z-index: 1001;  border-radius: 1px;}\n        \n        .att_lightbox_column {  \n          display: flex;  \n          flex-direction: column;  \n          justify-content: center;  \n          align-items: center;  \n          margin: 20px;  \n          height: calc(100% - 40px);  \n        }\n        .att_lightbox_header {  text-align: center;  font-size: 32pt;  color: #221E1F;  margin: 0;  padding: 1rem;  line-height: 1.35;}.att_lightbox_subhheader {  font-size: 14pt;  text-align: center;  color: #221E1F;  line-height: 1.35;  margin: 20px 30px;  padding: 0;}.att_lightbox_button {  text-transform: uppercase; font-family: \"Archivo\",Arial,sans-serif; font-style: normal; letter-spacing: 1.5px; font-weight: bold; height: 45px;  width: auto;  min-width: 80%;  background-color: #bb5811;  color: #fff !important;  border-radius: 2px;  text-decoration: none;  display: flex;  justify-content: center;  align-items: center;  font-size: 16px;  margin: 10px;}.att_lightbox_button:hover {  background-color: #ac470c;  text-decoration: none;  cursor: pointer;}.att_lightbox_button:active {  background-color: #4CAF50;  text-decoration: none;  cursor: pointer;}.att_lightbox_button[disabled=disabled],.att_lightbox_button:disabled {  background-color: #D8D8D8;  text-decoration: none;}#att_lightbox_close {  font-size: 12pt;  color: #4A4A4A;  text-align: center;  text-decoration: none;  margin: 10px;  font-weight: 300;}#att_lightbox_close:hover {  text-decoration: underline;}@media (max-width: 801px) {  .att_popup {    margin: 20px;  } }`,\n      handlers = function () {\n        var t =\n          null != att_config.delay && att_config.delay ? att_config.delay : 5;\n        function n() {\n          document.getElementById(\"att_lightbox\").style.display = \"none\";\n        }\n        !1 !== att_config.delay &&\n          setTimeout(function () {\n            att_config.fired ||\n              ((document.getElementById(\"att_lightbox\").style.display = \"flex\"),\n              (att_config.fired = !0));\n          }, 1e3 * t),\n          // document\n          //   .getElementById(\"att_lightbox_close\")\n          //   .addEventListener(\"click\", function (t) {\n          //     t.preventDefault(), n();\n          //   }),\n          document\n            .querySelector(\".att_lightbox_background\")\n            .addEventListener(\"click\", function (t) {\n              att_config.clickBackgroundToClose && (t.preventDefault(), n());\n            });\n      };\n    injector({ template: template, style: style, handlers: handlers });\n    (\"use strict\");\n    function injector(e) {\n      var t = null != e.el && e.el ? e.el : document.body,\n        l = document.createElement(\"div\");\n      e.templateClass && l.classList.add(e.templateClass),\n        (l.innerHTML =\n          null != e.template && e.template\n            ? e.template.replace(/(\\r\\n\\t|\\n|\\r\\t)/gm, \"\")\n            : \"\"),\n        t.appendChild(l);\n      var n = document.createElement(\"style\");\n      (n.innerText =\n        null != e.style && e.style\n          ? e.style.replace(/(\\r\\n\\t|\\n|\\r\\t)/gm, \"\")\n          : \"\"),\n        document.head.appendChild(n),\n        null != e.handlers && \"function\" == typeof e.handlers && e.handlers();\n    }\n  })();\n</script>\n</div>",
+                                "selector": "head",
+                                "prehidingSelector": "head"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "AT:eyJhY3Rpdml0eUlkIjoiNzI0NTc1IiwiZXhwZXJpZW5jZUlkIjoiMCJ9",
+                    "scope": "__view__",
+                    "scopeDetails": {
+                        "decisionProvider": "TGT",
+                        "activity": {
+                            "id": "724575"
+                        },
+                        "experience": {
+                            "id": "0"
+                        },
+                        "strategies": [
+                            {
+                                "step": "entry",
+                                "trafficType": "0"
+                            },
+                            {
+                                "step": "display",
+                                "trafficType": "0"
+                            },
+                            {
+                                "step": "conversion",
+                                "trafficType": "0"
+                            }
+                        ],
+                        "characteristics": {
+                            "eventToken": "woSm4S5mkzlwlF7P4ch8f53BNhkKdJh9FdggP2851ydw54XAlJ3xNRImNE7jBWgsDTUtuHiy7Y7RiRmHjST6IQ==",
+                            "analyticsToken": "1516137:0:0|2"
+                        },
+                        "correlationID": "724575:0:0"
+                    },
+                    "items": [
+                        {
+                            "id": "0",
+                            "schema": "https://ns.adobe.com/personalization/dom-action",
+                            "meta": {
+                                "profile.nnvisitCounter": "1",
+                                "profile.countVisit_sachin": "5",
+                                "activity.name": "test_cust_att",
+                                "profile.profileparamcheck_k": "1",
+                                "profile.uduID": "1",
+                                "profile.count_visit_sa": "1",
+                                "activity.id": "724575",
+                                "geo.state": "karnataka",
+                                "profile.categoryAffinitiesArray": "[]",
+                                "profile.nn_discountCode": "noDiscount",
+                                "profile.visitCount": "5",
+                                "profile.nn_membertype": "",
+                                "profile.countVisit_Shital": "5",
+                                "offer.name": "/test_cust_att/experiences/0/pages/0/zones/0/1698914898322",
+                                "profile.custparam_gender": "male",
+                                "profile.Current_Date_GK": "2024-09-12",
+                                "profile.Gauresh_VisitNumber": "1",
+                                "experience.name": "Experience A",
+                                "profile.paramsprofile2": "1",
+                                "profile.base": "0",
+                                "profile.nnPopup": "false",
+                                "profile.totalSale": "0",
+                                "profile.custparam_itemsInCart": "false",
+                                "experience.id": "0",
+                                "profile.pooVisiterCount": "1",
+                                "profile.ganeshNewSession": "false",
+                                "profile.poornima_membertype": "",
+                                "geo.city": "bangalore",
+                                "profile.GaneshMembershipType": "gold",
+                                "profile.nnPopupPageB": "false"
+                            },
+                            "data": {
+                                "type": "setHtml",
+                                "format": "application/vnd.adobe.target.dom-action",
+                                "content": "<script></script>",
+                                "selector": "head",
+                                "prehidingSelector": "head"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "AT:eyJhY3Rpdml0eUlkIjoiMTA0MjI0MCIsImV4cGVyaWVuY2VJZCI6IjAifQ==",
+                    "scope": "__view__",
+                    "scopeDetails": {
+                        "decisionProvider": "TGT",
+                        "activity": {
+                            "id": "1042240"
+                        },
+                        "experience": {
+                            "id": "0"
+                        },
+                        "strategies": [
+                            {
+                                "step": "entry",
+                                "trafficType": "0"
+                            },
+                            {
+                                "step": "display",
+                                "trafficType": "0"
+                            },
+                            {
+                                "step": "conversion",
+                                "trafficType": "0"
+                            }
+                        ],
+                        "characteristics": {
+                            "eventToken": "cWYFcdIwyRymFBb6VmgaWXZJRFNRMCdc84hKiEgfaaq7I2aV5okLvdambMy5fCYKEbF4uljoWwkd+0ROpP07KQ==",
+                            "analyticsToken": "1516137:0:0|2"
+                        },
+                        "correlationID": "1042240:0:0"
+                    },
+                    "items": [
+                        {
+                            "id": "0",
+                            "schema": "https://ns.adobe.com/personalization/dom-action",
+                            "meta": {
+                                "profile.nnvisitCounter": "1",
+                                "profile.countVisit_sachin": "5",
+                                "activity.name": "udu-test-image",
+                                "profile.profileparamcheck_k": "1",
+                                "profile.uduID": "1",
+                                "profile.count_visit_sa": "1",
+                                "activity.id": "1042240",
+                                "geo.state": "karnataka",
+                                "profile.categoryAffinitiesArray": "[]",
+                                "profile.nn_discountCode": "noDiscount",
+                                "profile.visitCount": "5",
+                                "profile.nn_membertype": "",
+                                "profile.countVisit_Shital": "5",
+                                "offer.name": "udu-test-img",
+                                "profile.custparam_gender": "male",
+                                "profile.Current_Date_GK": "2024-09-12",
+                                "profile.Gauresh_VisitNumber": "1",
+                                "experience.name": "Experience A",
+                                "profile.paramsprofile2": "1",
+                                "profile.base": "0",
+                                "profile.nnPopup": "false",
+                                "profile.totalSale": "0",
+                                "profile.custparam_itemsInCart": "false",
+                                "experience.id": "0",
+                                "profile.pooVisiterCount": "1",
+                                "profile.ganeshNewSession": "false",
+                                "profile.poornima_membertype": "",
+                                "geo.city": "bangalore",
+                                "profile.GaneshMembershipType": "gold",
+                                "profile.nnPopupPageB": "false"
+                            },
+                            "data": {
+                                "type": "setHtml",
+                                "format": "application/vnd.adobe.target.dom-action",
+                                "content": "<script>\nvar imageURLs = [{\n    'src': 'https://www.jet2holidays.com/-/media/Jet2holidays/Images/optimizely/bf165-ksp_banners/bf-165-image_01_desktop.jpg?rq',\n  'srcset' : 'https://www.jet2holidays.com/-/media/Jet2holidays/Images/optimizely/bf165-ksp_banners/bf-165-image_01_desktop.jpg?rq'\n    },\n  {\n    'src': 'https://www.jet2holidays.com/-/media/Jet2holidays/Images/optimizely/bf165-ksp_banners/bf-165-image_02_mobile.jpg',\n  'srcset' : 'https://www.jet2holidays.com/-/media/Jet2holidays/Images/optimizely/bf165-ksp_banners/bf-165-image_02_mobile.jpg'\n    },\n  {\n    'src': 'https://www.jet2holidays.com/-/media/jet2holidays/images/winter%20and%20summer%20paypal%20and%20pay%20monthly/270x270_promocard_holidays_1.jpg',\n  'srcset' : 'https://www.jet2holidays.com/-/media/jet2holidays/images/winter%20and%20summer%20paypal%20and%20pay%20monthly/270x270_promocard_holidays_1.jpg'\n    },\n  {\n    'src': 'https://www.jet2holidays.com/-/media/jet2holidays/images/payday%20project%20nov%2023/payday%20deals%20lp/winter%20summer%20deals%20promos/turkey.jpg',\n  'srcset' : 'https://www.jet2holidays.com/-/media/jet2holidays/images/payday%20project%20nov%2023/payday%20deals%20lp/winter%20summer%20deals%20promos/turkey.jpg'\n    }]\n\n  Flickerlessly = window.Flickerlessly || { }, !function (t) {\"use strict\"; var e = function (t, e, a, n) { var i = \"atNodeInserted\" + t, s = \"@keyframes \" + i + \" {from {opacity:0.99} to {opacity:1} }\\n\"; s += e + \"{animation - duration:0.001s;animation-name:\" + i + \";visibility:visible}\"; var o = document.getElementsByTagName(\"head\")[0]; if (o) { var r = document.createElement(\"style\"); r.setAttribute(\"type\", \"text/css\"), r.styleSheet ? r.styleSheet.cssText = s : r.appendChild(document.createTextNode(s)), o.insertBefore(r, o.firstChild) } var c = function (t) { if (t.animationName === i && \"object\" == typeof t.target) { var s = n === !0 || n === !1 && null === t.target.getAttribute(\"data-flk-success\") ? !0 : !1; console && console.info && console.info(\"Node \" + e + \" ready! Execute: \" + s, t.target), \"function\" == typeof a && s && (a(t.target), t.target.setAttribute(\"data-flk-success\", i)), t.target.style.visibility = \"visible\" } };[\"animationstart\", \"MSAnimationStart\", \"webkitAnimationStart\"].forEach(function (t, e) {document.addEventListener(t, c, !1)}) }; t.onReady = function () { for (var t = 0; t < arguments.length; t++) { var a = arguments[t], n = a.selector, i = a.success || null, s = a.persist || !1, o = Math.floor(100 * Math.random() + 1); e(o, n, i, s) } } }(Flickerlessly);\n  Flickerlessly.onReady(\n  \n  {\n    selector: \"[data-slick-index='1']\",\n  success: function (el) {\n    setTimeout(() => {   \n\n      el.querySelectorAll(\"div img\").forEach(function (item, index) {\n        console.log(item);\n        item.setAttribute(\"src\", imageURLs[index].src);\n        item.setAttribute(\"srcset\", imageURLs[index].srcset);\n      });\n    }, 200);\n               },\n  persist: true\n        })\n  \n</script>",
+                                "selector": "head",
+                                "prehidingSelector": "head"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "AT:eyJhY3Rpdml0eUlkIjoiMTM3NDk4MiIsImV4cGVyaWVuY2VJZCI6IjAifQ==",
+                    "scope": "__view__",
+                    "scopeDetails": {
+                        "decisionProvider": "TGT",
+                        "activity": {
+                            "id": "1374982"
+                        },
+                        "experience": {
+                            "id": "0"
+                        },
+                        "strategies": [
+                            {
+                                "step": "entry",
+                                "trafficType": "0"
+                            },
+                            {
+                                "step": "display",
+                                "trafficType": "0"
+                            },
+                            {
+                                "step": "conversion",
+                                "trafficType": "0"
+                            }
+                        ],
+                        "characteristics": {
+                            "eventToken": "4rG8UTbys+f5o7viMqG+eXZJRFNRMCdc84hKiEgfaaq7I2aV5okLvdambMy5fCYKEbF4uljoWwkd+0ROpP07KQ==",
+                            "analyticsToken": "1516137:0:0|2"
+                        },
+                        "correlationID": "1374982:0:0"
+                    },
+                    "items": [
+                        {
+                            "id": "0",
+                            "schema": "https://ns.adobe.com/personalization/dom-action",
+                            "meta": {
+                                "profile.nnvisitCounter": "1",
+                                "profile.countVisit_sachin": "5",
+                                "activity.name": "VT | Response Tokens",
+                                "profile.profileparamcheck_k": "1",
+                                "profile.uduID": "1",
+                                "profile.count_visit_sa": "1",
+                                "activity.id": "1374982",
+                                "geo.state": "karnataka",
+                                "profile.categoryAffinitiesArray": "[]",
+                                "profile.nn_discountCode": "noDiscount",
+                                "profile.visitCount": "5",
+                                "profile.nn_membertype": "",
+                                "profile.countVisit_Shital": "5",
+                                "offer.name": "/vt_response_tokens/experiences/0/pages/0/zones/0/1721035376851",
+                                "profile.custparam_gender": "male",
+                                "profile.Current_Date_GK": "2024-09-12",
+                                "profile.Gauresh_VisitNumber": "1",
+                                "experience.name": "Experience A",
+                                "profile.paramsprofile2": "1",
+                                "profile.base": "0",
+                                "profile.nnPopup": "false",
+                                "profile.totalSale": "0",
+                                "profile.custparam_itemsInCart": "false",
+                                "experience.id": "0",
+                                "profile.pooVisiterCount": "1",
+                                "profile.ganeshNewSession": "false",
+                                "profile.poornima_membertype": "",
+                                "geo.city": "bangalore",
+                                "profile.GaneshMembershipType": "gold",
+                                "profile.nnPopupPageB": "false"
+                            },
+                            "data": {
+                                "type": "setHtml",
+                                "format": "application/vnd.adobe.target.dom-action",
+                                "content": "<script type=\"text/javascript\">\n    document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function (e) {\n        debugger;\n        var tokens = e.detail.responseTokens;\n    });\n</script>",
+                                "selector": "head",
+                                "prehidingSelector": "head"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "AT:eyJhY3Rpdml0eUlkIjoiNzA1MjA4IiwiZXhwZXJpZW5jZUlkIjoiMCJ9",
+                    "scope": "__view__",
+                    "scopeDetails": {
+                        "decisionProvider": "TGT",
+                        "activity": {
+                            "id": "705208"
+                        },
+                        "experience": {
+                            "id": "0"
+                        },
+                        "strategies": [
+                            {
+                                "step": "entry",
+                                "trafficType": "0"
+                            },
+                            {
+                                "step": "display",
+                                "trafficType": "0"
+                            },
+                            {
+                                "step": "conversion",
+                                "trafficType": "0"
+                            }
+                        ],
+                        "characteristics": {
+                            "eventToken": "6JD+RmxQqcfOOoNZL+ddEJ3BNhkKdJh9FdggP2851ydw54XAlJ3xNRImNE7jBWgsDTUtuHiy7Y7RiRmHjST6IQ==",
+                            "analyticsToken": "1516137:0:0|2"
+                        },
+                        "correlationID": "705208:0:0"
+                    },
+                    "items": [
+                        {
+                            "id": "0",
+                            "schema": "https://ns.adobe.com/personalization/dom-action",
+                            "meta": {
+                                "profile.nnvisitCounter": "1",
+                                "profile.countVisit_sachin": "5",
+                                "activity.name": "shital-XT-form",
+                                "profile.profileparamcheck_k": "1",
+                                "profile.uduID": "1",
+                                "profile.count_visit_sa": "1",
+                                "activity.id": "705208",
+                                "geo.state": "karnataka",
+                                "profile.categoryAffinitiesArray": "[]",
+                                "profile.nn_discountCode": "noDiscount",
+                                "profile.visitCount": "5",
+                                "profile.nn_membertype": "",
+                                "profile.countVisit_Shital": "5",
+                                "offer.name": "/shital-xt-form/experiences/0/pages/0/zones/0/1698227033087",
+                                "profile.custparam_gender": "male",
+                                "profile.Current_Date_GK": "2024-09-12",
+                                "profile.Gauresh_VisitNumber": "1",
+                                "experience.name": "Experience A",
+                                "profile.paramsprofile2": "1",
+                                "profile.base": "0",
+                                "profile.nnPopup": "false",
+                                "profile.totalSale": "0",
+                                "profile.custparam_itemsInCart": "false",
+                                "experience.id": "0",
+                                "profile.pooVisiterCount": "1",
+                                "profile.ganeshNewSession": "false",
+                                "profile.poornima_membertype": "",
+                                "geo.city": "bangalore",
+                                "profile.GaneshMembershipType": "gold",
+                                "profile.nnPopupPageB": "false"
+                            },
+                            "data": {
+                                "type": "setHtml",
+                                "format": "application/vnd.adobe.target.dom-action",
+                                "content": "<script>\n  console.info('%c shital-XT-form: Experience A ',\"font-weight:600;color:#ffffff;background-color:#555550;\");\n</script>",
+                                "selector": "head",
+                                "prehidingSelector": "head"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "AT:eyJhY3Rpdml0eUlkIjoiMzUwMzcwIiwiZXhwZXJpZW5jZUlkIjoiMCJ9",
+                    "scope": "__view__",
+                    "scopeDetails": {
+                        "decisionProvider": "TGT",
+                        "activity": {
+                            "id": "350370"
+                        },
+                        "experience": {
+                            "id": "0"
+                        },
+                        "strategies": [
+                            {
+                                "step": "entry",
+                                "trafficType": "0"
+                            },
+                            {
+                                "step": "display",
+                                "trafficType": "0"
+                            },
+                            {
+                                "step": "conversion",
+                                "trafficType": "0"
+                            }
+                        ],
+                        "characteristics": {
+                            "eventToken": "b89WDVwVMds730iDSGcQvJ3BNhkKdJh9FdggP2851ydw54XAlJ3xNRImNE7jBWgsDTUtuHiy7Y7RiRmHjST6IQ==",
+                            "analyticsToken": "1516137:0:0|2"
+                        },
+                        "correlationID": "350370:0:0"
+                    },
+                    "items": [
+                        {
+                            "id": "0",
+                            "schema": "https://ns.adobe.com/personalization/dom-action",
+                            "meta": {
+                                "profile.nnvisitCounter": "1",
+                                "profile.countVisit_sachin": "5",
+                                "activity.name": "NB : Test Custom Mbox",
+                                "profile.profileparamcheck_k": "1",
+                                "profile.uduID": "1",
+                                "profile.count_visit_sa": "1",
+                                "activity.id": "350370",
+                                "geo.state": "karnataka",
+                                "profile.categoryAffinitiesArray": "[]",
+                                "profile.nn_discountCode": "noDiscount",
+                                "profile.visitCount": "5",
+                                "profile.nn_membertype": "",
+                                "profile.countVisit_Shital": "5",
+                                "offer.name": "/nb_test_custom_mbox/experiences/0/pages/0/zones/0/1685088004999",
+                                "profile.custparam_gender": "male",
+                                "profile.Current_Date_GK": "2024-09-12",
+                                "profile.Gauresh_VisitNumber": "1",
+                                "experience.name": "Experience A",
+                                "profile.paramsprofile2": "1",
+                                "profile.base": "0",
+                                "profile.nnPopup": "false",
+                                "profile.totalSale": "0",
+                                "profile.custparam_itemsInCart": "false",
+                                "experience.id": "0",
+                                "profile.pooVisiterCount": "1",
+                                "profile.ganeshNewSession": "false",
+                                "profile.poornima_membertype": "",
+                                "geo.city": "bangalore",
+                                "profile.GaneshMembershipType": "gold",
+                                "profile.nnPopupPageB": "false"
+                            },
+                            "data": {
+                                "type": "setHtml",
+                                "format": "application/vnd.adobe.target.dom-action",
+                                "content": "<style>\n.targetdiv{\nwidth:33%;\ndisplay:inline-block;\nmargin:1px;\nbackground:#bcf3e6;\n}\n</style>\n<script>\n  debugger;\n\tvar _campaignArray = [];\n\tvar _object = '';\n    var _campaignData = '';\n    var _campaignSplit = _campaignData.replaceAll(\"{\",\"\").replaceAll(\"}\",\"\").split(\"||\");\n    console.log(_campaignSplit);\n\tvar objects = {};\n\tvar HTMLContent = \"<div>\";\n\tfor(var i=0;i<_campaignSplit.length;i++)\n\t{\n\t\tvar objects = {};\n\t\tvar _splitData = _campaignSplit[i].split(\"|\");\n\t\tfor(var j=0;j<_splitData.length;j++)\n\t\t{\n\t\t\tconsole.log(_splitData[j]);\n\t\t\tvar _data = _splitData[j].split(\"=\");\n\t\t\tobjects[_data[0]] = _data[1];\n\t\t}\n\t\tconsole.log(objects);\n\t\t_campaignArray.push(objects);\n\t}\n\tconsole.log(_campaignArray);\n\t//Generate Banner\n\tfor(var k=0;k<_campaignArray.length;k++)\n\t{\n\t\tvar data1,data2,data3;\n\t\tvar _bannerType = _campaignArray[k].Description;\n\t\tswitch(_bannerType) {\n\t\t  case \"EC_Loans\":\n\t\t\tdata1 = \"The Campaign ID is : \"+_campaignArray[k].CampID;\n\t\t\tdata2 = \"The Offer Amount is : \"+_campaignArray[k].offer_amount;\n\t\t\tdata3 = \"The Offer Interest is : \"+_campaignArray[k].offer_interest;\n\t\t\tbreak;\n\t\t  case \"PPI_Banner1\":\n\t\t\tdata1 = \"The Campaign ID is : \"+_campaignArray[k].CampID;\n\t\t\tdata2 = \"The PPI1 Rate One is : \"+_campaignArray[k].PPIRATE1;\n\t\t\tdata3 = \"The PPI1 Rate Two is : \"+_campaignArray[k].PPIRATE2;\n\t\t\tbreak;\n\t\t  case \"Deposit\":\n\t\t\tdata1 = \"The Campaign ID is : \"+_campaignArray[k].CampID;\n\t\t\tdata2 = \"The Interest Rate is : \"+_campaignArray[k].INTERESTRATE;\n\t\t\tdata3 = \"The Validity is : \"+_campaignArray[k].deposit_interest_validity;\t\n\t\t\tbreak;\n\t\t  default:\n\t\t\t// code block\n\t\t}\n\t\tvar _div = \"<div class='targetdiv'><p>\"+data1+\"</p><p>\"+data2+\"</p><p>\"+data3+\"</p></div>\";\n\t\tHTMLContent += _div;\n\t}\n\tHTMLContent += \"</div>\";\n\tvar _appendhTML = document.querySelector(\".head_tabs_bar\");\n\t_appendhTML.innerHTML += HTMLContent;\n  </script>",
+                                "selector": "head",
+                                "prehidingSelector": "head"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "AT:eyJhY3Rpdml0eUlkIjoiNTI1MTY2IiwiZXhwZXJpZW5jZUlkIjoiMCJ9",
+                    "scope": "__view__",
+                    "scopeDetails": {
+                        "decisionProvider": "TGT",
+                        "activity": {
+                            "id": "525166"
+                        },
+                        "experience": {
+                            "id": "0"
+                        },
+                        "strategies": [
+                            {
+                                "step": "entry",
+                                "trafficType": "0"
+                            },
+                            {
+                                "step": "display",
+                                "trafficType": "0"
+                            },
+                            {
+                                "step": "conversion",
+                                "trafficType": "0"
+                            }
+                        ],
+                        "characteristics": {
+                            "eventToken": "xe6btP6V+JKTYFJZjskFpp3BNhkKdJh9FdggP2851ydw54XAlJ3xNRImNE7jBWgsDTUtuHiy7Y7RiRmHjST6IQ==",
+                            "analyticsToken": "1516137:0:0|2"
+                        },
+                        "correlationID": "525166:0:0"
+                    },
+                    "items": [
+                        {
+                            "id": "0",
+                            "schema": "https://ns.adobe.com/personalization/dom-action",
+                            "meta": {
+                                "profile.nnvisitCounter": "1",
+                                "profile.countVisit_sachin": "5",
+                                "activity.name": "Conv",
+                                "profile.profileparamcheck_k": "1",
+                                "profile.uduID": "1",
+                                "profile.count_visit_sa": "1",
+                                "activity.id": "525166",
+                                "geo.state": "karnataka",
+                                "profile.categoryAffinitiesArray": "[]",
+                                "profile.nn_discountCode": "noDiscount",
+                                "profile.visitCount": "5",
+                                "profile.nn_membertype": "",
+                                "profile.countVisit_Shital": "5",
+                                "offer.name": "/conv/experiences/0/pages/0/zones/0/1691550234059",
+                                "profile.custparam_gender": "male",
+                                "profile.Current_Date_GK": "2024-09-12",
+                                "profile.Gauresh_VisitNumber": "1",
+                                "experience.name": "Experience A",
+                                "profile.paramsprofile2": "1",
+                                "profile.base": "0",
+                                "profile.nnPopup": "false",
+                                "profile.totalSale": "0",
+                                "profile.custparam_itemsInCart": "false",
+                                "experience.id": "0",
+                                "profile.pooVisiterCount": "1",
+                                "profile.ganeshNewSession": "false",
+                                "profile.poornima_membertype": "",
+                                "geo.city": "bangalore",
+                                "profile.GaneshMembershipType": "gold",
+                                "profile.nnPopupPageB": "false"
+                            },
+                            "data": {
+                                "type": "setHtml",
+                                "format": "application/vnd.adobe.target.dom-action",
+                                "content": "<script>\n    var data = { \"__adobe\": { \"target\": {} } };\n\n    data.__adobe.target[\"requestClicked\"] = \"clicked\";\n\n\n\n    try { alloy(\"sendEvent\", { renderDecisions: false, decisionScopes: [\"__view__\"], data: data }); }\n\n    catch (err) { }\n</script>",
+                                "selector": "head",
+                                "prehidingSelector": "head"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "AT:eyJhY3Rpdml0eUlkIjoiOTE3ODUzIiwiZXhwZXJpZW5jZUlkIjoiMCJ9",
+                    "scope": "__view__",
+                    "scopeDetails": {
+                        "decisionProvider": "TGT",
+                        "activity": {
+                            "id": "917853"
+                        },
+                        "experience": {
+                            "id": "0"
+                        },
+                        "strategies": [
+                            {
+                                "step": "entry",
+                                "trafficType": "0"
+                            },
+                            {
+                                "step": "display",
+                                "trafficType": "0"
+                            }
+                        ],
+                        "characteristics": {
+                            "eventToken": "znsB/puHV304LdwVf9js+J3BNhkKdJh9FdggP2851ydw54XAlJ3xNRImNE7jBWgsgJd3DNmZFmAmR22YP7jXhw==",
+                            "analyticsToken": "1516137:0:0|2"
+                        },
+                        "correlationID": "917853:0:0"
+                    },
+                    "items": [
+                        {
+                            "id": "0",
+                            "schema": "https://ns.adobe.com/personalization/dom-action",
+                            "meta": {
+                                "profile.nnvisitCounter": "1",
+                                "profile.countVisit_sachin": "5",
+                                "activity.name": "Sachin: button click track- My website",
+                                "profile.profileparamcheck_k": "1",
+                                "profile.uduID": "1",
+                                "profile.count_visit_sa": "1",
+                                "activity.id": "917853",
+                                "geo.state": "karnataka",
+                                "profile.categoryAffinitiesArray": "[]",
+                                "profile.nn_discountCode": "noDiscount",
+                                "profile.visitCount": "5",
+                                "profile.nn_membertype": "",
+                                "profile.countVisit_Shital": "5",
+                                "offer.name": "/sachin_button_clicktrack-mywebsite/experiences/0/pages/0/zones/0/1705572324818",
+                                "profile.custparam_gender": "male",
+                                "profile.Current_Date_GK": "2024-09-12",
+                                "profile.Gauresh_VisitNumber": "1",
+                                "experience.name": "Experience A",
+                                "profile.paramsprofile2": "1",
+                                "profile.base": "0",
+                                "profile.nnPopup": "false",
+                                "profile.totalSale": "0",
+                                "profile.custparam_itemsInCart": "false",
+                                "experience.id": "0",
+                                "profile.pooVisiterCount": "1",
+                                "profile.ganeshNewSession": "false",
+                                "profile.poornima_membertype": "",
+                                "geo.city": "bangalore",
+                                "profile.GaneshMembershipType": "gold",
+                                "profile.nnPopupPageB": "false"
+                            },
+                            "data": {
+                                "type": "setHtml",
+                                "format": "application/vnd.adobe.target.dom-action",
+                                "content": "<script>\n\n\n \ndocument.querySelector(\"body > main > section:nth-child(1) > button > a\").addEventListener(\"click\", function() {\n  adobe.target.trackEvent({ mbox: 'Sn_ClickTrack', params: { 'Clicked': 'CTAClick' } });\n});\n\n \n</script>",
+                                "selector": "head",
+                                "prehidingSelector": "head"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "AT:eyJhY3Rpdml0eUlkIjoiMTUxNjEzNyIsImV4cGVyaWVuY2VJZCI6IjAifQ==",
+                    "scope": "__view__",
+                    "scopeDetails": {
+                        "decisionProvider": "TGT",
+                        "activity": {
+                            "id": "1516137"
+                        },
+                        "experience": {
+                            "id": "0"
+                        },
+                        "strategies": [
+                            {
+                                "step": "entry",
+                                "trafficType": "0"
+                            },
+                            {
+                                "step": "display",
+                                "trafficType": "0"
+                            }
+                        ],
+                        "characteristics": {
+                            "eventToken": "FqwUka2QDOZwjub+7s+UtHZJRFNRMCdc84hKiEgfaaq7I2aV5okLvdambMy5fCYKH3eRKuI+NOqFCvq8DBNM5A==",
+                            "analyticsToken": "1516137:0:0|2"
+                        },
+                        "correlationID": "1516137:0:0"
+                    },
+                    "items": [
+                        {
+                            "id": "0",
+                            "schema": "https://ns.adobe.com/personalization/dom-action",
+                            "meta": {
+                                "profile.nnvisitCounter": "1",
+                                "profile.countVisit_sachin": "5",
+                                "activity.name": "TestVM websdk",
+                                "profile.profileparamcheck_k": "1",
+                                "profile.uduID": "1",
+                                "profile.count_visit_sa": "1",
+                                "activity.id": "1516137",
+                                "geo.state": "karnataka",
+                                "profile.categoryAffinitiesArray": "[]",
+                                "profile.nn_discountCode": "noDiscount",
+                                "profile.visitCount": "5",
+                                "profile.nn_membertype": "",
+                                "profile.countVisit_Shital": "5",
+                                "offer.name": "Default Content",
+                                "profile.custparam_gender": "male",
+                                "profile.Current_Date_GK": "2024-09-12",
+                                "profile.Gauresh_VisitNumber": "1",
+                                "experience.name": "Experience A",
+                                "profile.paramsprofile2": "1",
+                                "profile.base": "0",
+                                "profile.nnPopup": "false",
+                                "profile.totalSale": "0",
+                                "profile.custparam_itemsInCart": "false",
+                                "experience.id": "0",
+                                "profile.pooVisiterCount": "1",
+                                "profile.ganeshNewSession": "false",
+                                "profile.poornima_membertype": "",
+                                "geo.city": "bangalore",
+                                "profile.GaneshMembershipType": "gold",
+                                "profile.nnPopupPageB": "false"
+                            },
+                            "data": {
+                                "type": "insertAfter",
+                                "format": "application/vnd.adobe.target.dom-action",
+                                "content": "<div id=\"action_insert_1725780494287730\">you are seeing the Challenger</div>",
+                                "selector": "HTML > BODY > SECTION.hero:eq(0) > DIV.hero-content:eq(0) > H2:nth-of-type(1)",
+                                "prehidingSelector": "HTML > BODY > SECTION:nth-of-type(1) > DIV:nth-of-type(1) > H2:nth-of-type(1)"
+                            }
+                        },
+                        {
+                            "id": "0",
+                            "schema": "https://ns.adobe.com/personalization/dom-action",
+                            "meta": {
+                                "profile.nnvisitCounter": "1",
+                                "profile.countVisit_sachin": "5",
+                                "activity.name": "TestVM websdk",
+                                "profile.profileparamcheck_k": "1",
+                                "profile.uduID": "1",
+                                "profile.count_visit_sa": "1",
+                                "activity.id": "1516137",
+                                "geo.state": "karnataka",
+                                "profile.categoryAffinitiesArray": "[]",
+                                "profile.nn_discountCode": "noDiscount",
+                                "profile.visitCount": "5",
+                                "profile.nn_membertype": "",
+                                "profile.countVisit_Shital": "5",
+                                "offer.name": "Default Content",
+                                "profile.custparam_gender": "male",
+                                "profile.Current_Date_GK": "2024-09-12",
+                                "profile.Gauresh_VisitNumber": "1",
+                                "experience.name": "Experience A",
+                                "profile.paramsprofile2": "1",
+                                "profile.base": "0",
+                                "profile.nnPopup": "false",
+                                "profile.totalSale": "0",
+                                "profile.custparam_itemsInCart": "false",
+                                "experience.id": "0",
+                                "profile.pooVisiterCount": "1",
+                                "profile.ganeshNewSession": "false",
+                                "profile.poornima_membertype": "",
+                                "geo.city": "bangalore",
+                                "profile.GaneshMembershipType": "gold",
+                                "profile.nnPopupPageB": "false"
+                            },
+                            "data": {
+                                "type": "setStyle",
+                                "format": "application/vnd.adobe.target.dom-action",
+                                "content": {
+                                    "background-color": "rgba(212,255,170,1)",
+                                    "priority": "important"
+                                },
+                                "selector": "#action_insert_1725780494287730",
+                                "prehidingSelector": "#action_insert_1725780494287730"
+                            }
+                        },
+                        {
+                            "id": "0",
+                            "schema": "https://ns.adobe.com/personalization/dom-action",
+                            "meta": {
+                                "profile.nnvisitCounter": "1",
+                                "profile.countVisit_sachin": "5",
+                                "activity.name": "TestVM websdk",
+                                "profile.profileparamcheck_k": "1",
+                                "profile.uduID": "1",
+                                "profile.count_visit_sa": "1",
+                                "activity.id": "1516137",
+                                "geo.state": "karnataka",
+                                "profile.categoryAffinitiesArray": "[]",
+                                "profile.nn_discountCode": "noDiscount",
+                                "profile.visitCount": "5",
+                                "profile.nn_membertype": "",
+                                "profile.countVisit_Shital": "5",
+                                "offer.name": "Default Content",
+                                "profile.custparam_gender": "male",
+                                "profile.Current_Date_GK": "2024-09-12",
+                                "profile.Gauresh_VisitNumber": "1",
+                                "experience.name": "Experience A",
+                                "profile.paramsprofile2": "1",
+                                "profile.base": "0",
+                                "profile.nnPopup": "false",
+                                "profile.totalSale": "0",
+                                "profile.custparam_itemsInCart": "false",
+                                "experience.id": "0",
+                                "profile.pooVisiterCount": "1",
+                                "profile.ganeshNewSession": "false",
+                                "profile.poornima_membertype": "",
+                                "geo.city": "bangalore",
+                                "profile.GaneshMembershipType": "gold",
+                                "profile.nnPopupPageB": "false"
+                            },
+                            "data": {
+                                "type": "insertAfter",
+                                "format": "application/vnd.adobe.target.dom-action",
+                                "content": "<div id=\"action_insert_1726049015167786\">alloy(\"sendEvent\", {\n    \"type\": \"decisioning.propositionDisplay\",\n    \"xdm\": {\n        \"_experience\": {\n            \"decisioning\": {\n                \"propositions\": [{\n                    \"scope\": \"xdmClick\" // Or any mbox/location name you want to use in Adobe Target\n                }]\n            }\n        }\n    }\n});</div>",
+                                "selector": "HTML > BODY > SECTION.features:eq(0) > DIV.feature:eq(0) > H3:nth-of-type(1)",
+                                "prehidingSelector": "HTML > BODY > SECTION:nth-of-type(2) > DIV:nth-of-type(1) > H3:nth-of-type(1)"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "type": "personalization:decisions",
+            "eventIndex": 0
+        },
+        {
+            "payload": [
+                {
+                    "scope": "Target",
+                    "hint": "41",
+                    "ttlSeconds": 1800
+                },
+                {
+                    "scope": "AAM",
+                    "hint": "12",
+                    "ttlSeconds": 1800
+                },
+                {
+                    "scope": "EdgeNetwork",
+                    "hint": "ind1",
+                    "ttlSeconds": 1800
+                }
+            ],
+            "type": "locationHint:result"
+        },
+        {
+            "payload": [
+                {
+                    "key": "kndctr_975D01725D5A6B1C0A495EF5_AdobeOrg_cluster",
+                    "value": "ind1",
+                    "maxAge": 1800
+                }
+            ],
+            "type": "state:store"
+        }
+    ]
+}
